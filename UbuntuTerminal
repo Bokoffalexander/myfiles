@@ -1,11 +1,18 @@
 TERMINAL ДЛЯ UBUNTU
 
+curl https://raw.githubusercontent.com/Bokoffalexander/myfiles/main/UbuntuTerminal.txt -o Terminal.txt
+
 Ctr+Alt+T = для открытия Терминала
 
 TAB = possible continuation
 
 TAB+TAB = for all possible choises
 
+gcc main.c
+
+python3 hello.py
+
+sqlite3 new.db
 
 COMMANDS:
 
