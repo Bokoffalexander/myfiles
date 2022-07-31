@@ -18,6 +18,8 @@ sqlite3 new.db
 
 COMMANDS:
 
+alias 1='echo Hello Sasha'
+
 man = это manual, обьясняет команду
 
 pwd = Print Working Directory 
