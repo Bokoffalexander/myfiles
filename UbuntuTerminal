@@ -1,0 +1,123 @@
+TERMINAL ДЛЯ UBUNTU
+
+Ctr+Alt+T = для открытия Терминала
+
+TAB = possible continuation
+
+TAB+TAB = for all possible choises
+
+
+COMMANDS:
+
+man = это manual, обьясняет команду
+
+pwd = Print Working Directory 
+
+ls = printing List of files and directories
+
+	ls -lah = long list format,  all, human(redable)
+
+cd = Change Directory (absolute or relative PATH)
+
+	cd .. = for previous directory
+
+clear = clearing the screen
+
+mkdir = MaKe Directory (-p=PARENTS)
+
+	mkdir folder1
+
+	mkdir -p LINUX/ubuntu/Bokoffolder 
+
+rmdir = ReMove EMPTY Directory
+	
+	rmdir Bokoffolder
+
+	rmdir -p LINUX/ubuntu/Bokoffolder
+
+file = gives us information about this file (what type of file)
+
+	file ReadMe.txt = it will say: this is a text FILE
+
+touch = create empty file
+
+	touch file1.txt
+	
+	touch file2.txt file3.txt
+
+rm = ReMove file or directory
+
+	rm file2.txt
+
+	rm -i file1.txt file2.txt = интерактивно (задаст вопрос)
+
+	rm -r folder = remove folder with content (рекурсивно)
+
+cp = copy file or directory (copy what) (where to paste)
+	
+	cp file.txt filecp.txt
+
+	cp file.txt /home/alex/folder/filecp.txt
+
+	cp -r folder foldercp = for copy directory with all content
+
+mv = move or rename file
+
+	mv file.txt filenewname.txt
+
+	mv file.txt folder1/folder2/file2.txt
+
+
+
+head = output of first 10 lines of the file
+
+	head file.txt
+
+	head -20 file.txt
+
+
+xdg-open file.txt = open it as GUI (Graphical User Interface)
+xdg-open . = open folder GUI
+
+
+
+cat file1 file2 file3 > file4 = overwrite it again
+
+echo This is the END >> file4 = append (adding to an end)
+
+date >> file4
+
+
+
+cat -n file4 = print it adding line_number
+
+
+less file4 = it shows content in a nice UI
+
+less file4 = /anyword I look for
+
+
+echo "Hi !" > file    = one line anything Typing
+
+
+
+ls -lah | wc
+
+sort file.txt
+
+sort -n file.txt > newfile.txt
+
+sort -nu file.txt | wc -l > lines.txt
+
+sort names.txt | uniq -c | sort -nr
+ Most popular names list
+
+
+
+chmod +x command.txt
+
+./command.txt
+
+chmod +x command.txt && ./command.txt
+
+ 
