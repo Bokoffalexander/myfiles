@@ -1,6 +1,6 @@
 TERMINAL ДЛЯ UBUNTU
 
-curl https://raw.githubusercontent.com/Bokoffalexander/myfiles/main/UbuntuTerminal.txt -o Terminal.txt
+curl https://raw.githubusercontent.com/Bokoffalexander/myfiles/main/Terminal.txt -o Terminal.txt
 
 Ctr+Alt+T = для открытия Терминала
 
@@ -122,6 +122,8 @@ sort names.txt | uniq -c | sort -nr
  Most popular names list
 
 
+
+To execute command from FILE.txt
 
 chmod +x command.txt
 
