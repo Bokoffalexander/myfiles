@@ -135,3 +135,4 @@ chmod +x command.txt && ./command.txt
 
  
 Yes!
+Yes from Acer!
