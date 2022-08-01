@@ -1,7 +1,7 @@
 TERMINAL ДЛЯ UBUNTU
-
+*************************
 curl https://raw.githubusercontent.com/Bokoffalexander/myfiles/main/Terminal.txt -o Terminal.txt
-
+*************************
 Ctr+Alt+T = для открытия Терминала
 
 TAB = possible continuation
@@ -161,5 +161,4 @@ git checkout -b qaz
  
 git init
 git remote add origin git@github.com:Bokoffalexander/myfiles.git
-
 ******** www *******
