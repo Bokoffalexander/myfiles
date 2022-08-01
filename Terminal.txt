@@ -134,5 +134,14 @@ chmod +x command.txt
 chmod +x command.txt && ./command.txt
 
  
-Yes!
+Yes from Replit!
 Yes from Acer!
+
+*****git****
+ 
+git clone git@github.com:Bokoffalexander/myfiles.git
+git add Terminal.txt
+git commit -m "my comments.."
+git status
+git push -u origin main
+git checkout -b qaz
