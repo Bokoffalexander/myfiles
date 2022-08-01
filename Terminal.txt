@@ -145,3 +145,6 @@ git commit -m "my comments.."
 git status
 git push -u origin main
 git checkout -b qaz
+ 
+git init
+git remote add origin git@github.com:Bokoffalexander/myfiles.git
