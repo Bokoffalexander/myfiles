@@ -141,6 +141,10 @@ Yes from Acer!
 ************
 
 ***create keys***
+*****************
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+****************
+
 ssh-keygen -t ed25519 -C "bokoffalexander@gmail.com"
 
 eval "$(ssh-agent -s)"
@@ -157,3 +161,5 @@ git checkout -b qaz
  
 git init
 git remote add origin git@github.com:Bokoffalexander/myfiles.git
+
+*****www*******
