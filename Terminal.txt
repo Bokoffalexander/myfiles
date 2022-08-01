@@ -138,7 +138,16 @@ Yes from Replit!
 Yes from Acer!
 
 *****git****
- 
+************
+
+***create keys***
+ssh-keygen -t ed25519 -C "bokoffalexander@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_ed25519
+******************
+
 git clone git@github.com:Bokoffalexander/myfiles.git
 git add Terminal.txt
 git commit -m "my comments.."
