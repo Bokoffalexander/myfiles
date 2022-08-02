@@ -114,6 +114,7 @@ echo "Hi !" > file    = one line anything Typing
 
 ls -lah | wc
 
+*********************
 sort file.txt
 
 sort -n file.txt > newfile.txt
@@ -122,17 +123,17 @@ sort -nu file.txt | wc -l > lines.txt
 
 sort names.txt | uniq -c | sort -nr
  Most popular names list
+****************************
 
-
-
+********************************
 To execute command from FILE.txt
-
+********************************
 chmod +x command.txt
 
 ./command.txt
 
 chmod +x command.txt && ./command.txt
-
+************************************
  
 Yes from Replit!
 Yes from Acer!
@@ -161,4 +162,17 @@ git checkout -b qaz
  
 git init
 git remote add origin git@github.com:Bokoffalexander/myfiles.git
+
+**************************
+echo ~  (home/alex/)
+
+echo $USER (alex)
+
+echo * (print all files in this folder)
+
+echo *.??? (file.txt, bible.pdb)
+
+*******************
+awk 'NR>=3 && NR<=3' Terminal.txt > c1.txt 
+
 ******** www *******
