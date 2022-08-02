@@ -172,6 +172,12 @@ echo * (print all files in this folder)
 
 echo *.??? (file.txt, bible.pdb)
 
+echo {a,b,c}.txt
+
+echo {1..99}
+
+echo Day{1..365}
+
 *******************
 awk 'NR>=3 && NR<=3' Terminal.txt > c1.txt 
 
