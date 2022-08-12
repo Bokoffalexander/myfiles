@@ -1,7 +1,7 @@
 // Сортировка целых чисел
 #include <stdio.h>  // для printf
 #include <stdlib.h> // atoi преобразуют символьную строку в целое значение
-#define BIG_N 1000000
+#define BIG_N 1600000001
 // функция 1 считать количество
 void
 read_N_file (int N[]);
