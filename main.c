@@ -1,7 +1,7 @@
 // Сортировка целых чисел
 #include <stdio.h>  // для printf
 #include <stdlib.h> // atoi преобразуют символьную строку в целое значение
-#define BIG_N 1600000001
+#define BIG_N 36000
 // функция 1 считать количество
 void
 read_N_file (int N[]);
@@ -31,6 +31,9 @@ summa(int old_m[], int n, int S[]);
 // 8 запись в файл ОТСОРТИРОВАННОГО масива
 void
 writePrintArray (int A[], int size);
+
+// 9 Insertion sort
+void insertSort(int A[],int n);
 
 // Main Method
 int
@@ -64,6 +67,7 @@ main ()
     printArray (old_m, N[0]*N[1]);
 
     // Main 4 Сортировка массива
+/*
     int *C = malloc(BIG_N*4); // Создаем счетчик С[]
     
     for(int i=0; i<BIG_N; i++) // Это обнуление счетчика C[] 
@@ -72,10 +76,15 @@ main ()
 	}
 
     count_sort(old_m, C, N[0]*N[1]);// Сама сортировка массива
-    
+  */
+
+	//Main 4 Inserion sort        
+	insertSort(old_m, N[0]*N[1]);
+	printf ("\n Sorted array is \n");
+	printArray(old_m, N[0]*N[1]);  
     // Main 5 Запись в массив old_m[] того, что отсортировалось
-    printf ("\n Sorted array is \n");
-    sorted_to_massive(C, old_m);
+   // printf ("\n Sorted array is \n");
+   // sorted_to_massive(C, old_m);
     
     // Main 6 Запись каждого десятого элемента отсортированного массива в А[]
     // Запись суммы эдементов А[] в S[0]
@@ -233,4 +242,22 @@ writePrintArray (int A[], int size)
     for (i = 0; i < size; i++)
         fprintf (f, "%d ", A[i]);
     fclose(f);
+}
+
+// 9 Insertion sort
+void insertSort(int A[],int n)
+{
+  putchar('\n');
+  for (int k=1;k<n;k++)
+    {
+        int h=k;
+        while 
+        (h>0 && A[h-1]>A[h])
+        {
+            int tmp=A[h-1];
+            A[h-1] = A[h];
+            A[h] = tmp;
+            h--;
+        }
+    }
 }
