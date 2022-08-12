@@ -26,11 +26,11 @@ void sorted_to_massive(int C[], int old_m[]);
 
 // 7 Кладем сумму в S
 void
-summa(int old_m[], int n, int S[]);
+summa(int old_m[], int n, long long int S[]);
 
 // 8 запись в файл ОТСОРТИРОВАННОГО масива
 void
-writePrintArray (int A[], int size);
+writePrintArray (long long int A[], int size);
 
 // 9 Insertion sort
 void insertSort(int A[],int n);
@@ -88,7 +88,7 @@ main ()
     
     // Main 6 Запись каждого десятого элемента отсортированного массива в А[]
     // Запись суммы эдементов А[] в S[0]
-     int S[1]={0};// Массив из одного элемента СУММА
+     long long int S[1]={0};// Массив из одного элемента СУММА
      summa(old_m, N[0]*N[1],S); 
 
     // Main 7 Запись в файл
@@ -219,7 +219,7 @@ void sorted_to_massive(int C[], int old_m[])
 
 // 7 Кладем сумму в S
 void
-summa(int old_m[], int n, int S[])
+summa(int old_m[], int n, long long int S[])
 {
 	int k=0;
 	while(k<n)
@@ -234,13 +234,13 @@ summa(int old_m[], int n, int S[])
 
 // 8 запись в файл ОТСОРТИРОВАННОГО масива
 void
-writePrintArray (int A[], int size)
+writePrintArray (long long int A[], int size)
 {
     FILE *f;
     f = fopen("output.txt", "w");
     int i;
     for (i = 0; i < size; i++)
-        fprintf (f, "%d ", A[i]);
+        fprintf (f, "%lld ", A[i]);
     fclose(f);
 }
 
