@@ -1,4 +1,4 @@
-TERMINAL ДЛЯ UBUNTU
+TERMINAL bash ДЛЯ UBUNTU
 *************************
 curl https://raw.githubusercontent.com/Bokoffalexander/myfiles/main/Terminal.txt -o Terminal.txt
 *************************
@@ -180,5 +180,124 @@ echo Day{1..365}
 
 *******************
 awk 'NR>=3 && NR<=3' Terminal.txt > c1.txt 
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+    Check os version in Linux
+hostnamectl = УЗНАТЬ операционную систему и ПК
+
+ (Static hostname: alex-Aspire
+       Icon name: computer
+      Machine ID: 9b600fff59134286bf9f64a5863f5293
+         Boot ID: c10bc2f859db4370b2b87e826f7c3297
+Operating System: Ubuntu 22.10                    
+          Kernel: Linux 5.19.0-31-generic
+    Architecture: x86-64
+ Hardware Vendor: Acer
+  Hardware Model: Aspire C24-420
+Firmware Version: R01-A4)
+
+
+
+File contains operating system identification data.
+cat /etc/os-release
+
+(PRETTY_NAME="Ubuntu 22.10"
+NAME="Ubuntu"
+VERSION_ID="22.10"
+VERSION="22.10 (Kinetic Kudu)"
+VERSION_CODENAME=kinetic
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=kinetic
+LOGO=ubuntu-logo)
+
+
+
+КАК УЗНАТЬ ВЕРСИЮ ЯДРА LINUX?
+uname -a
+Linux alex-Aspire 5.19.0-31-generic #32-Ubuntu SMP PREEMPT_DYNAMIC
+Fri Jan 20 15:20:08 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+
+
+Вообще, команда uname умеет больше, чем написано выше. 
+Посмотрим на вывод команды uname --help:
+
+-a, --all напечатать всю информацию, в следующем порядке,
+
+кроме -p и -i, если они неизвестны:
+-s, --kernel-name напечатать имя ядра
+-n, --nodename напечатать имя машины в сети
+-r, --release напечатать номер выпуска операционной системы
+-v, --kernel-version напечатать версию ядра
+-m, --machine напечатать тип оборудования машины
+-p, --processor напечатать тип процессора или «неизвестно»
+-i, --hardware-platform напечатать тип аппаратной платформы или «неизвестно»
+-o, --operating-system напечатать имя операционной системы
+--help показать эту справку и выйти
+--version показать информацию о версии и выйти
+
+
+
+shutdown now выключение
+shutdown -r now перезагрузка
+
+
+
+ALIAS
+
+Creating Temporary Aliases
+alias 1='echo Hello Sasha'
+
+Creating Permanent Aliases
+To keep aliases between sessions, 
+you can save them in your user’s shell configuration profile file. 
+This can be:
+Bash – ~/.bashrc
+ZSH – ~/.zshrc
+Fish – ~/.config/fish/config.fish
+
+nano ~/.bashrc
+Find a place in the file, where you want to keep the aliases. 
+For example, you can add them in the end of the file. 
+For organizations purposes you can leave a comment 
+before your aliases something like this:
+#My custom aliases
+alias home=”ssh -i ~/.ssh/mykep.pem tecmint@192.168.0.100”
+alias ll="ls -alF"
+
+
+
+
+
+
+Использование переменных окружения.
+В Linux переменные окружения хранят системные данные, 
+необходимые процессам и приложениям для нормального функционирования. 
+Вы можете просмотреть значение некоторых определенных переменных окружения,
+которые хранят информацию об окружении рабочего стола вашей системы.
+Выполните следующую команду:
+Посмотреть установленные переменные можно командой env (environment). 
+env
+echo $SHELL (/bin/bash)
+echo $XDG_CURRENT_DESKTOP (ubuntu:GNOME)
+echo $USER (alex)
+echo $HOME (/home/alex)
+
+Другой способ установки изменяет значение глобально, 
+для всей сессии и выполняется так:
+echo $HOME (/home/alex)
+export HOME=/tmp
+cd
+pwd (/tmp)
+echo $HOME (/tmp)
+
 
 ******** www *******
