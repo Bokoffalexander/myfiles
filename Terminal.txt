@@ -272,8 +272,7 @@ before your aliases something like this:
 #My custom aliases
 alias home=”ssh -i ~/.ssh/mykep.pem tecmint@192.168.0.100”
 alias ll="ls -alF"
-
-
+alias 1='cat ~/projects/myfiles/Terminal.txt'
 
 
 
