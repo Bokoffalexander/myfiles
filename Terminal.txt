@@ -163,6 +163,9 @@ git checkout -b qaz
 git init
 git remote add origin git@github.com:Bokoffalexander/myfiles.git
 
+# Discard the local changes
+using git reset --hard
+
 **************************
 echo ~  (home/alex/)
 
