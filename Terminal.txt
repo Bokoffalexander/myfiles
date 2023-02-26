@@ -302,6 +302,8 @@ echo $HOME (/tmp)
 # ssh client and server
 sudo apt install openssh-client (asus)
 sudo apt install openssh-server (acer)
+# make sure all is good
+systemctl status
 # from asus(client) to acer(server)
 ssh alex@10.0.0.194
 # dalee poprosili PASSWORD
