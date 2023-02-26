@@ -1,0 +1,16 @@
+void insertSort(int A[],int n)
+{
+  putchar('\n');
+  for (int k=1;k<n;k++)
+    {
+        int h=k;
+        while 
+        (h>0 && A[h-1]>A[h])
+        {
+            int tmp=A[h-1];
+            A[h-1] = A[h];
+            A[h] = tmp;
+            h--;
+        }
+    }
+}
