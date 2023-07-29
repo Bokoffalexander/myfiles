@@ -1,12 +1,5 @@
-alex@111:~$ sudo -i -u postgres
-[sudo] пароль для alex: 
-postgres@111:~$ psql
-psql (12.11 (Ubuntu 12.11-0ubuntu0.20.04.1))
-Type "help" for help.
+select * from book;
 
-postgres=# \connect bok_job;
-You are now connected to database "bok_job" as user "postgres".
-bok_job=# select * from book;
  book_id |         title         |      author      | price  | amount 
 ---------+-----------------------+------------------+--------+--------
        1 | Мастер и Маргарита    | Булгаков М.А.    | 670.99 |      3
@@ -15,9 +8,9 @@ bok_job=# select * from book;
        4 | Братья Карамазовы     | Достоевский Ф.М. | 799.01 |      3
        5 | Игрок                 | Достоевский Ф.М. | 480.50 |     10
        6 | Стихотворения и поэмы | Есенин С.А.      | 650.00 |     15
-(6 rows)
 
 bok_job=# select author, sum(price*amount) as "Стоимость" from book where title<>'Идиот' and title<>'Белая гвардия' group by author having sum(price*amount) > 5000 order by sum(price*amount) desc;
+
       author      | Стоимость 
 ------------------+-----------
  Есенин С.А.      |   9750.00
